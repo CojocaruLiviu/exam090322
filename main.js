@@ -100,3 +100,17 @@ const calcPrice = () =>{
     }
     document.getElementById("tprice").innerHTML+= sum;
 }
+
+const addteen = () =>{
+    document.getElementById("cars").innerHTML =" ";
+    for (let entry of cars) {
+        document.getElementById("cars").innerHTML += "</br>";
+        for (let key in entry) {
+            if (key == "price"||key == "maxSpeed") {
+                entry[key]+=10;     
+            }
+            document.getElementById("cars").innerHTML += (`${key}: ${entry[key]} </br>`);
+        }
+    }
+
+}
