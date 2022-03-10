@@ -68,3 +68,27 @@ for (const entry of cars) {
 }
 //////
 
+
+const delet = () => {
+    document.getElementById("cars").innerHTML = " ";
+    let sterge = document.getElementById("delt").value;
+
+
+
+    for (let entry of cars) {
+        document.getElementById("cars").innerHTML += "</br>";
+
+        for (let key in entry) {
+            if (entry[key] == sterge) {
+                cars.splice(0, 1);
+            } else if (entry[key] != sterge) {
+                document.getElementById("cars").innerHTML += (`${key}: ${entry[key]} </br>`);
+            }
+        }
+    }
+    console.log(JSON.stringify(cars));
+}
+
+const calcPrice = () =>{
+    
+}
