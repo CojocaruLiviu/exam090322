@@ -106,11 +106,10 @@ const addteen = () =>{
     for (let entry of cars) {
         document.getElementById("cars").innerHTML += "</br>";
         for (let key in entry) {
-            if (key == "price"||key == "maxSpeed") {
+            if (key == "price") {
                 entry[key]+=10;     
             }
             document.getElementById("cars").innerHTML += (`${key}: ${entry[key]} </br>`);
         }
     }
-
 }
