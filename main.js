@@ -55,6 +55,9 @@ const adauga = () => {
     }
 
     //alert(JSON.stringify(cars));
+    
+    let save = JSON.stringify(cars);
+    localStorage.setItem('Evaluare', save);
 }
 
 
@@ -86,28 +89,28 @@ const delet = () => {
             }
         }
     }
-   // console.log(JSON.stringify(cars));
+    // console.log(JSON.stringify(cars));
 }
 
-const calcPrice = () =>{
+const calcPrice = () => {
     let sum = 0;
     for (let entry of cars) {
         for (let key in entry) {
             if (key == "price") {
-                sum += entry[key];     
+                sum += entry[key];
             }
         }
     }
-    document.getElementById("tprice").innerHTML+= sum;
+    document.getElementById("tprice").innerHTML = sum;
 }
 
-const addteen = () =>{
-    document.getElementById("cars").innerHTML =" ";
+const addteen = () => {
+    document.getElementById("cars").innerHTML = " ";
     for (let entry of cars) {
         document.getElementById("cars").innerHTML += "</br>";
         for (let key in entry) {
             if (key == "price") {
-                entry[key]+=10;     
+                entry[key] += 10;
             }
             document.getElementById("cars").innerHTML += (`${key}: ${entry[key]} </br>`);
         }

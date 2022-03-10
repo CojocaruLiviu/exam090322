@@ -9,34 +9,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Evaluare</title>
 </head>
+<body>
 <h2 align="center">Evaluare</h2>
 
-<h1>Add car</h1>
-<label for="">Introdu nume: </label>
-<input type="text" id="name"></input></br>
-<label for="">Introdu engineType: </label>
-<input type="text" id="engine"></input></br>
-<label for="">Introdu MaxSped: </label>
-<input type="text" id="sped"></input></br>
-<label for="">Introdu price: </label>
-<input type="text" id="price"></input></br>
-<button onclick="adauga()">Submit</button></br>
+    <h1>Add car</h1>
+    <label for="">Introdu nume: </label>
+    <input type="text" id="name"></input></br>
+    <label for="">Introdu engineType: </label>
+    <input type="text" id="engine"></input></br>
+    <label for="">Introdu MaxSped: </label>
+    <input type="text" id="sped"></input></br>
+    <label for="">Introdu price: </label>
+    <input type="text" id="price"></input></br>
+    <button onclick="adauga()">Submit</button></br>
+
+    <label for="">Introdu nume element p/u stergere: </label>
+    <input type="text" id="delt"></input>
+    <button onclick="delet()">Delet</button></br>
+
+    <label for="" id="tprice">Summ is: </label></br>
+    <button onclick="calcPrice()">check</button></br>
+
+    <label for="" id="">Add 10 to all elements </label></br>
+    <button onclick="addteen()">check</button>
 
 
-
-<label for="">Introdu nume element p/u stergere: </label>
-<input type="text" id="delt"></input>
-<button onclick="delet()">Delet</button></br>
-
-
-<label for="" id="tprice">Summ is: </label></br>
-<button onclick="calcPrice()">check</button></br>
-
-<label for="" id="">Add 10 to all elements </label></br>
-<button onclick="addteen()">check</button>
-
-
-<div id="cars"></div>
+    <div id="cars"></div>
 
 <script src="main.js"></script>
 
