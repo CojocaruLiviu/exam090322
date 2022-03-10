@@ -86,9 +86,17 @@ const delet = () => {
             }
         }
     }
-    console.log(JSON.stringify(cars));
+   // console.log(JSON.stringify(cars));
 }
 
 const calcPrice = () =>{
-    
+    let sum = 0;
+    for (let entry of cars) {
+        for (let key in entry) {
+            if (key == "price") {
+                sum += entry[key];     
+            }
+        }
+    }
+    document.getElementById("tprice").innerHTML+= sum;
 }
